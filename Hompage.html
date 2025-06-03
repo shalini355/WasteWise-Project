@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <section>
+        <nav style="position:fixed; top:0; left:0; width:100%; z-index:1000; background: linear-gradient(90deg, #217a4c 60%, #43c59e 100%); padding: 16px 0; border-radius: 0 0 18px 18px; box-shadow: 0 2px 8px rgba(33,122,76,0.08);">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; justify-content:center; gap:32px;">
+                <li style="transition: transform 0.2s;">
+                    <a href="Hompage.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">Home</a>
+                </li>
+                <li><a href="#about" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">About Us</a></li>
+                <li><a href="#how-it-works" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">How It Works</a></li>
+                <li><a href="#scan-waste" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">Scan Waste</a></li>
+                <li><a href="#tips-guides" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">Tips & Guides</a></li>
+                <li><a href="#kids-zone" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">Kids Zone</a></li>
+                <li><a href="#contact" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">Contact Us</a></li>
+                <li><a href="#faqs" style="color:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; transition:background 0.2s, color 0.2s;">FAQs</a></li>
+                <li><a href="#login" style="color:#217a4c; background:#fff; text-decoration:none; font-size:1.1em; padding:8px 18px; border-radius:8px; font-weight:bold; transition:background 0.2s, color 0.2s;">Login / Sign Up</a></li>
+            </ul>
+            <script>
+                // Add hover effect for all nav links
+                document.querySelectorAll('nav ul li a').forEach(link => {
+                    link.addEventListener('mouseenter', function() {
+                        if(this.style.background !== "#fff") {
+                            this.style.background = "rgba(255,255,255,0.18)";
+                            this.style.color = "#fff";
+                        }
+                    });
+                    link.addEventListener('mouseleave', function() {
+                        if(this.style.background !== "#fff") {
+                            this.style.background = "none";
+                            this.style.color = "#fff";
+                        }
+                    });
+                });
+            </script>
+        </nav>
+    </section>
+    <section class="hero" style="min-height:100vh; display:flex; align-items:center; background: #e0f7e9; margin-top:80px;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:center; padding:24px;">
+                <h1 style="font-size:2.5em; color:#217a4c;">Welcome to WasteWise</h1>
+                <p style="font-size:1.2em; color:#444; max-width:600px; margin: 20px auto;">
+                    WasteWise is your smart waste management helper. Discover tips, guides, and creative ideas to reduce, reuse, and recycle—making our planet cleaner and greener for everyone.
+                </p>
+                <a href="#get-started" style="display:inline-block; margin:20px 0; padding:12px 32px; background:#217a4c; color:#fff; border-radius:5px; text-decoration:none; font-size:1.1em;">
+                    Get Started
+                </a>
+                <blockquote style="margin-top:30px; font-style:italic; color:#217a4c;">
+                    "Let's save our earth"
+                </blockquote>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2019/09/13/13/51/plant-4473973_1280.jpg" alt="Hero Plant" style="flex:1 1 340px; max-width:340px; border-radius:18px; margin:24px;">
+        </div>
+    </section>
+
+    <!-- SECTION: About Us -->
+    <section id="about" style="min-height:100vh; display:flex; align-items:center; background: #f4fff7;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/recycle-1992818_1280.png" alt="About WasteWise" style="flex:1 1 320px; max-width:320px; border-radius:12px; margin:24px;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:left; padding:24px;">
+                <h2 style="color: #217a4c;">About WasteWise</h2>
+                <p style="font-size: 1.1em; color: #444;">
+                    WasteWise is an AI-powered waste management solution designed to help users identify, sort, and responsibly dispose of their daily waste. Our goal is to empower individuals and communities to make smarter, greener choices every day.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px;">
+                    <div style="flex:1 1 180px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(33,122,76,0.08); padding:16px;">
+                        <h3 style="color:#217a4c;">Our Mission</h3>
+                        <p style="color:#444;">To reduce waste and promote recycling by making waste management easy, accessible, and educational for everyone.</p>
+                    </div>
+                    <div style="flex:1 1 180px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(33,122,76,0.08); padding:16px;">
+                        <h3 style="color:#217a4c;">Our Vision</h3>
+                        <p style="color:#444;">A cleaner, greener planet where every individual contributes to sustainable living and environmental protection.</p>
+                    </div>
+                    <div style="flex:1 1 180px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(33,122,76,0.08); padding:16px;">
+                        <h3 style="color:#217a4c;">Why WasteWise?</h3>
+                        <p style="color:#444;">We use technology and community-driven knowledge to help you make the best decisions for waste disposal and recycling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: How It Works -->
+    <section id="how-it-works" style="min-height:100vh; display:flex; align-items:center; background: #e0f7e9;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:left; padding:24px;">
+                <h2 style="color: #217a4c;">How It Works</h2>
+                <ol style="text-align: left; max-width: 700px; margin: 24px 0 0 0; color: #444; font-size:1.1em;">
+                    <li><strong>Take a photo or upload an image:</strong> Use your phone or computer to capture your waste item.</li>
+                    <li><strong>AI waste detection:</strong> Our system analyzes the image and identifies the waste category (plastic, organic, metal, etc.).</li>
+                    <li><strong>Get disposal guidance:</strong> Receive step-by-step instructions for proper disposal or recycling based on your location.</li>
+                    <li><strong>Track your impact:</strong> See how your actions contribute to a cleaner Earth and earn badges for eco-friendly habits!</li>
+                </ol>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/recycle-1992818_1280.png" alt="How WasteWise Works" style="flex:1 1 320px; max-width:320px; border-radius:12px; margin:24px;">
+        </div>
+    </section>
+
+    <!-- SECTION: Scan Waste -->
+    <section id="scan-waste" style="min-height:100vh; display:flex; align-items:center; background: #f4fff7;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <img src="https://cdn.pixabay.com/photo/2013/12/21/20/48/garbage-can-231874_1280.jpg" alt="Scan Waste" style="flex:1 1 220px; max-width:220px; border-radius:12px; margin:24px;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:left; padding:24px;">
+                <h2 style="color: #217a4c;">Scan Your Waste</h2>
+                <p style="color: #444; font-size:1.1em;">Use our smart scanner to instantly identify waste type and get disposal tips. You can upload a photo or use your webcam for real-time detection.</p>
+                <a href="scan.html" style="display:inline-block; padding:14px 36px; background:#217a4c; color:#fff; border-radius:8px; text-decoration:none; font-size:1.1em; margin:24px 0;">
+                    Upload or Take Photo
+                </a>
+                <ul style="text-align: left; max-width: 700px; margin: 24px 0 0 0; color: #444; font-size:1.05em;">
+                    <li>Supports multiple waste types: plastic, paper, glass, metal, organic, and more.</li>
+                    <li>Instant feedback and eco-friendly suggestions.</li>
+                    <li>Safe and private – your images are not stored.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Tips & Guides -->
+    <section id="tips-guides" style="min-height:100vh; display:flex; align-items:center; background: #e0f7e9;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:left; padding:24px;">
+                <h2 style="color: #217a4c;">Waste Disposal Tips & Guides</h2>
+                <ul style="text-align: left; max-width: 700px; margin: 24px 0 0 0; color: #444; font-size:1.1em;">
+                    <li>Separate wet and dry waste daily for easier recycling.</li>
+                    <li>Use compost bins for organic waste and create natural fertilizer for your plants.</li>
+                    <li>Clean recyclables before disposing to avoid contamination.</li>
+                    <li>Avoid plastic bags – choose eco alternatives like cloth or jute bags!</li>
+                    <li>Donate usable items instead of throwing them away.</li>
+                    <li>Learn your local recycling rules for better sorting.</li>
+                    <li>Reduce single-use plastics and opt for reusable containers.</li>
+                </ul>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.uuRabDSy3PKZ0zsMR1cJCwHaKB?r=0&rs=1&pid=ImgDetMain" alt="Tips and Guides" style="flex:1 1 220px; max-width:220px; border-radius:12px; margin:24px;">
+        </div>
+    </section>
+
+    <!-- SECTION: Kids Zone -->
+    <section id="kids-zone" style="min-height:100vh; display:flex; align-items:center; background: #f4fff7;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; max-width:1100px; margin:auto; width:100%;">
+            <img src="https://cdn.pixabay.com/photo/2015/12/28/14/31/garbage-can-1111449_1280.jpg" alt="Kids Zone" style="flex:1 1 180px; max-width:180px; border-radius:12px; margin:24px;">
+            <div style="flex:2 1 400px; min-width:280px; text-align:left; padding:24px;">
+                <h2 style="color: #217a4c;">Kids Zone (Coming Soon)</h2>
+                <p style="color: #444; font-size:1.1em;">Fun games and quizzes to help kids learn about recycling and protecting the environment.</p>
+                <ul style="text-align:left; max-width:700px; margin:24px 0 0 0; color:#444; font-size:1.05em;">
+                    <li>Interactive recycling games</li>
+                    <li>Colorful quizzes about waste sorting</li>
+                    <li>Printable eco-friendly activity sheets</li>
+                    <li>Stories and cartoons about saving the planet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FAQs -->
+    <section id="faqs" style="min-height:100vh; display:flex; align-items:center; background: #e0f7e9;">
+        <div style="width:100%; max-width: 900px; margin: auto;">
+            <h2 style="color: #217a4c; text-align:center;">Frequently Asked Questions</h2>
+            <div style="color:#444; max-width:700px; margin:auto;">
+                <details style="margin-bottom: 16px;">
+                    <summary style="font-weight:bold; cursor:pointer;">What is WasteWise?</summary>
+                    <div style="margin-top:8px;">WasteWise is an AI-powered platform that helps you identify, sort, and dispose of waste responsibly.</div>
+                </details>
+                <details style="margin-bottom: 16px;">
+                    <summary style="font-weight:bold; cursor:pointer;">How do I scan my waste?</summary>
+                    <div style="margin-top:8px;">Click on "Scan Waste" in the navigation bar, then upload or take a photo of your waste item. Our AI will guide you on what to do next.</div>
+                </details>
+                <details style="margin-bottom: 16px;">
+                    <summary style="font-weight:bold; cursor:pointer;">Is WasteWise free to use?</summary>
+                    <div style="margin-top:8px;">Yes, all basic features are free for everyone. We aim to make waste management accessible to all.</div>
+                </details>
+                <details style="margin-bottom: 16px;">
+                    <summary style="font-weight:bold; cursor:pointer;">How can I contact support?</summary>
+                    <div style="margin-top:8px;">Use the "Contact Us" section to send us your queries or feedback. We love to hear from you!</div>
+                </details>
+                <details style="margin-bottom: 16px;">
+                    <summary style="font-weight:bold; cursor:pointer;">Can I suggest new features?</summary>
+                    <div style="margin-top:8px;">Absolutely! Please use the contact form to share your ideas and suggestions for WasteWise.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Footer -->
+    <section style="padding: 20px; background: #217a4c; text-align: center; color: #fff;">
+        <p>&copy; 2025 WasteWise. All rights reserved. | Designed with 💚 for a cleaner future.</p>
+    </section>
+</body>
